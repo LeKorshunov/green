@@ -24,7 +24,51 @@ body {
     margin: 0 auto;
 }
 
+.container-right {
+    padding-left: calc((100% - var(--container-width))/2 + var(--container-padding));
+}
+
 .block{
     height: 200px;
     background-color: green;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+    min-height: 940px;
+    padding-top: 44px;
+    
+    background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 96px;
+
+    background-image: url(/img/header/header-bottom.svg);
+    background-size: 100%;
+}
+
+.header__top{
+    margin-bottom: 86px;
+    
+}
+
+.header__content{
+    min-width: 592px;
+}
+
+/* Nav */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+
 }
